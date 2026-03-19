@@ -5,12 +5,14 @@ Color: rgb(255,255,255);
 
 p {
     color: rgb(0, 0, 0);
-    background-color: #ffffff;
-    padding: 40px;
-    display: inline-block;
-    margin: 0;
 }
-h1 {
+}
+.piglet{
+    background-color: rgb(176, 21, 21);
+    color:rgb(163, 4, 4);
+    padding:20px;
+}
+h1 span {
     color: rgb(0, 0, 0);
     background-color: #ffffff;
     padding: 40px;
@@ -18,7 +20,7 @@ h1 {
     margin: 0;
 }
 
-h2 {
+h2 span {
     color: #000000;
     background-color: #ffffff;
     padding: 40px;
@@ -26,11 +28,11 @@ h2 {
     margin: 0;
 }
 
-h3 {
+h3 span {
     color: #000000;
     background-color: rgb(255, 255, 255);
     padding: 40px;
     display: inline-block;
     margin: 0;
 }
-}
+
