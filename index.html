@@ -1,54 +1,96 @@
 <!DOCTYPE html>
 <html>
+
 <head>
      <title>(●'◡'●)😊</title>
 
-     <link rel="stylesheet" href="./styles/first.css"/>
-     <link rel="stylesheet" href="./styles/second.css"/>
+     <link rel="stylesheet" href="./styles/first.css" />
+     <link rel="stylesheet" href="./styles/second.css" />
 
-     
+
 </head>
-<body id="light">
-     <button onclick="console.log('hi');document.body.id='dark'">
-          
-        dark mode
-          </button>
-     <button onclick="console.log('hi'); document.body.id='light'">
+
+<body id="dark">
+     <button id="color-mode" onclick="changecolors()">
 
           light mode
-          </button>
-    <h1><span>my first web page</span></h1>
-    <h2><span>Full-Stack Curriculum</span></h2>
-    <img src="./images/download.jpg" width=700>
-    <p>Learn the skills to become a full-stack developer</p>
- <p class="piglet">hi my name is piglet</p>    
- 
-    <h3>Introduction to HTML</h3>
-    <p>HTML A the content and structure of a webpage</p>
+     </button>
 
-    <h3><span>Introduction to CSS</span></h3>
-    <p>CSS is used to style a webpage</p>
-    <script>
-let character = {
-name:"link",
-weight: 50,
-happy: false
-};
-console.log(character.name);
-let family ={
-     dad: "Rhoam",
-     mom: "sonia",
-     pet:character,
-};hello
+     <script>
+          const colorModeButton = document.querySelector('#color-mode');
+          console.log(colorModeButton);
+          function changecolors() {
+               if (document.body.id === "dark") {
+                    document.body.id = 'light';
+                    colorModeButton.textContent = 'dark mode';
+               }
+                else {
+                    document.body.id = 'dark';
+                    colorModeButton.textContent = 'light mode';
+               }o
 
-console.log(family);
-family.pet.happy = true;
-console.log(console);
+          } 
+
+     </script>
+     <h1><span>my first web page</span></h1>
+     <h2><span>Full-Stack Curriculum</span></h2>
+     <img src="./images/download.jpg" width=700>
+     <p>Learn the skills to become a full-stack developer</p>
+     <p class="piglet">hi my name is piglet</p>
+
+     <h3>Introduction to HTML</h3>
+     <p>HTML A the content and structure of a webpage</p>
+
+     <h3><span>Introduction to CSS</span></h3>
+     <p>CSS is used to style a webpage</p>
+     <script>
+          let character = {
+               name: "link",
+               weight: 50,
+               happy: false
+          };
+          console.log(character.name);
+          let family = {
+               dad: "Rhoam",
+               mom: "sonia",
+               pet: character,
+          };
+
+          console.log(family);
+          family.pet.happy = true;
+         function howAreYou(){
+          let mood = prompt("how are you feeling?");
+          if (mood === "sleepy") {
+               alert('take a nap😴🥱💤')
+          } else {
+               alert('oh! You are feeling ' + mood + '!')
+          }
+          if (mood === "happy") {
+               alert('keep smilling!!😊😁👍')
+          }
+          if (mood === "sad") {
+               alert('your day will be better!!😇🥲😆')
+          }
+          if (mood === "angry") {
+               alert('dont hold grudges!😤🤬😒')
+          }
+          if (mood === "im awake") {
+               alert('oh yr awake🙀')
+          }
+     }
 
     </script>
-    <footer>
-     <p>3/12</p>
-     <p> Adrian Su</p>
-    </footer>
-   </body>
+    <button id="how are you" onclick="howAreYou();">
+        how are you?
+    </button>
+</body>
+
+</html>
+     </script>
+     <footer>
+          <p>3/12</p>
+          <p> Adrian Su</p>
+     </footer>
+</body>
+
 </html>

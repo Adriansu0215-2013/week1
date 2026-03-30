@@ -38,4 +38,8 @@ h3 {
    /* display: inline-block;*/
    /* margin: 0;*/
 }
+footer p{
+    margin : 0;
+    padding : 0 ;
+}
 
